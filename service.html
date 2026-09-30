@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Poppins:wght@300;400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#44474a", "surface-container-lowest": "#ffffff", "on-primary-container": "#888c91", "surface-dim": "#dbdad6", "secondary-container": "#fed39c", "tertiary-fixed-dim": "#c9c6c1", "on-primary-fixed": "#181c20", "error": "#ba1a1a", "primary-fixed": "#e0e3e8", "tertiary-container": "#262522", "on-tertiary-container": "#8e8c87", "on-primary": "#ffffff", "surface-bright": "#fbf9f5", "inverse-on-surface": "#f2f0ed", "on-primary-fixed-variant": "#43474c", "outline": "#75777b", "surface-container": "#efeeea", "tertiary-fixed": "#e6e2dd", "on-error": "#ffffff", "outline-variant": "#c5c6ca", "on-background": "#1b1c1a", "on-tertiary-fixed-variant": "#484743", "primary-fixed-dim": "#c3c7cc", "secondary-fixed": "#ffddb4", "on-secondary": "#ffffff", "on-secondary-container": "#79592d", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-tertiary-fixed": "#1c1c19", "on-secondary-fixed": "#291800", "secondary-fixed-dim": "#e9c08a", "primary-container": "#212529", "surface-container-highest": "#e4e2de", "surface-container-high": "#eae8e4", "inverse-surface": "#30312e", "secondary": "#78592d", "on-surface": "#1b1c1a", "surface-tint": "#5b5f63", "inverse-primary": "#c3c7cc", "on-secondary-fixed-variant": "#5e4117", "surface-container-low": "#f5f3ef", "on-tertiary": "#ffffff", "surface": "#fbf9f5", "surface-variant": "#e4e2de", "background": "#fbf9f5", "primary": "#0c1014", "tertiary": "#10100d" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xs": "0.25rem", "margin": "1.25rem", "space-md": "1rem", "gutter": "1.5rem", "margin-desktop": "5rem", "gutter-desktop": "2.5rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-2xl": "4rem", "space-3xl": "6rem", "margin-tablet": "2.5rem" }, fontFamily: { "title-md": ["Outfit"], "headline-md": ["Playfair Display"], "headline-sm": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "display-mobile": ["Playfair Display"], "label-lg": ["Outfit"], "body-sm": ["Outfit"], "title-lg": ["Outfit"], "body-lg": ["Outfit"], "label-md": ["Outfit"], "headline-lg": ["Playfair Display"], "display": ["Playfair Display"], "label-sm": ["Outfit"], "body-md": ["Outfit"] }, fontSize: { "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "500" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }], "display-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } html { scroll-behavior: smooth; } } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }</style></head><body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col font-body-md text-body-md"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><button aria-label="Open Studio Menu" class="w-11 h-11 -ml-space-xs flex items-center justify-center text-on-surface active:scale-95 transition-transform" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex items-center gap-1.5"><span class="font-['Playfair_Display'] text-[21px] font-normal tracking-tight text-primary lowercase">artiv</span><span class="font-['Poppins'] text-[11px] font-medium tracking-[0.22em] text-secondary uppercase">interiors</span></div><div class="flex items-center gap-2"><a class="hidden sm:inline-flex items-center px-space-md h-9 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm tracking-wider uppercase hover:bg-primary-container transition-colors" data-path="consultation-booking" href="contact.html">Book</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16"><div class="flex flex-col w-full">
+<!-- Subtle Header Introduction -->
+<section class="px-margin pt-space-lg pb-space-md">
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">architecture</span>
+<span>Studio Capabilities</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Our Services</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Interior solutions designed for beautiful everyday living, curated with sensory tactility and architectural poise in Rajahmundry.</p>
+</div>
+</section>
+<!-- Interactive Category Filter Chips -->
+<section class="px-margin pb-space-lg">
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 text-nowrap">
+<button class="filter-chip px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md transition-all active:scale-95" data-filter="all" type="button">All Services (8)</button>
+<button class="filter-chip px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-container-highest" data-filter="turnkey" type="button">Turnkey &amp; Spatial</button>
+<button class="filter-chip px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-container-highest" data-filter="millwork" type="button">Millwork &amp; Joinery</button>
+<button class="filter-chip px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-container-highest" data-filter="lighting" type="button">Lighting &amp; Accents</button>
+</div>
+</section>
+<!-- Service Cards Stream -->
+<section class="px-margin space-y-space-lg pb-space-2xl">
+<!-- 1. Complete Home Interiors -->
+<article class="service-card group rounded-xl bg-surface-container-low overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md" data-category="turnkey">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Expansive open-plan living and dining interior bathed in soft warm morning light, showing lime-washed beige walls, natural oak timber cabinetry, linen textured upholstery, and subtle brass pendant lighting in a serene residential home." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgOiRHSa4Z3nj28nJZ-A8EU9uKTj2dORkoVcrSxwPoMjGU3H8sEoYZsHHol-rzvYNT6Ilp58mZtcDek3kYHLOv5DC2nZ4lYi72Wed4omsrhpUcC5N_kP42qizORwdI8WMbDK9gBCV6mVbhx5jCR-_PJow4_zQ6GJ8qwNYxCu21875RqcrOeZWQJD2boV4AIhvHnvTaXc9AfQieWCtBQsVFn99sPcMYqrkxzEuQp_r_AYgKUyKg2g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-primary-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span>01</span>
+<span class="opacity-60">•</span>
+<span>Turnkey Curation</span>
+</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 text-surface">
+<h2 class="font-headline-sm text-headline-sm text-surface">Complete Home Interiors</h2>
+</div>
+</div>
+<div class="p-space-md space-y-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Create a cohesive interior across your home with carefully planned spaces, finishes, furniture and lighting.</p>
+<div class="space-y-space-xs rounded-lg bg-surface-container p-space-sm">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Architectural Inclusions</p>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Space planning &amp; structural flow</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Cohesive color concepts &amp; natural plaster</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Bespoke furniture planning &amp; procurement</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Layered architectural lighting concepts</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Sensory material selection (stone, wood, linen)</span>
+</li>
+</ul>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Estimated Timeline</p>
+<p class="font-title-md text-title-md text-primary font-medium">8 – 12 Weeks</p>
+</div>
+<a class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase shadow-sm hover:bg-primary-container active:scale-95 transition-all" href="contact.html">
+<span>Enquire Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- 2. Living Room Interiors -->
+<article class="service-card group rounded-xl bg-surface-container-low overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md" data-category="turnkey">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Refined contemporary living room sanctuary with low-slung tailored linen sofa in oatmeal tone, fluted wood console, fluted glass divider, warm soft ambient glow from concealed cove lights, and subtle travertine coffee table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9MWQxglVx3Z8eQEWNMSScB1PAev9cP1Juasu0rs3HubZk304vIhj388Q-3VSWh64NcQzsptrqnkgnF5NO9Og4lWvSyl2ELNqoIvmH9xsOTCOm_1ErXR9JOFyBxx_vEvzdfVvqLs3Ijyt7LXfQsLsOW2WsG2MaZeQR_fgZMt0qSqJh7U3_EzU9F9DFNRaDROQp1iNcCV-beyWbBBG5XI-nlnX9hKNs24sDZuoI7nfqmMgiXHhOTQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-primary-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span>02</span>
+<span class="opacity-60">•</span>
+<span>Gathering Spaces</span>
+</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 text-surface">
+<h2 class="font-headline-sm text-headline-sm text-surface">Living Room Interiors</h2>
+</div>
+</div>
+<div class="p-space-md space-y-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Create welcoming living rooms that combine comfort, visual appeal and functionality tailored to your family's daily rituals.</p>
+<div class="space-y-space-xs rounded-lg bg-surface-container p-space-sm">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Key Specifications</p>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Architectural media units &amp; hidden cabling</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Tactile textured feature walls &amp; slatted paneling</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Ergonomic conversational seating layouts</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Multi-zone dimmable scene lighting</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Seamlessly concealed living area storage</span>
+</li>
+</ul>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Estimated Timeline</p>
+<p class="font-title-md text-title-md text-primary font-medium">3 – 4 Weeks</p>
+</div>
+<a class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase shadow-sm hover:bg-primary-container active:scale-95 transition-all" href="contact.html">
+<span>Enquire Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- 3. Modular Kitchens -->
+<article class="service-card group rounded-xl bg-surface-container-low overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md" data-category="millwork">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sleek bespoke modular kitchen with handleless matte taupe cabinets, fluted island counter, quartz stone waterfall countertop, warm brass under-cabinet lighting strips, and integrated pantry storage units." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaqlK31RI73T-740aBjGZ3N5azZ6qI05-uY7E122CYqSKlWZhKvf8RQ20STAliOYn0Id_rhYn_R7S9v0RXe9-Pj8CDuZ_2wPkaGu4Vsq4OPZH_NK5mwoanXCJRt5v8LNMZ1KG-I9u0SbAggPrzVlUG9crpP5aJZOFZKgBYVfec0dqJAOkDY2h6f10k_k4GRx2b6AfhUJFdvnQhcvdUUKDWfxEN3jUaU0vvu6Has1rMC8xZB9jVyQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-primary-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span>03</span>
+<span class="opacity-60">•</span>
+<span>Culinary Ergonomics</span>
+</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 text-surface">
+<h2 class="font-headline-sm text-headline-sm text-surface">Modular Kitchens</h2>
+</div>
+</div>
+<div class="p-space-md space-y-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Design efficient kitchens with practical work zones, smart storage and contemporary finishes crafted for Indian cooking traditions.</p>
+<div class="space-y-space-xs rounded-lg bg-surface-container p-space-sm">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Culinary Framework</p>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Golden triangle layout &amp; ergonomic flow</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Anti-scratch acrylic, PU &amp; laminate cabinets</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Durable quartz &amp; nano-treated granite countertops</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Corner carousel units &amp; tandem pull-out trays</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Shadowless task prep &amp; ambient plinth lighting</span>
+</li>
+</ul>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Estimated Timeline</p>
+<p class="font-title-md text-title-md text-primary font-medium">4 – 6 Weeks</p>
+</div>
+<a class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase shadow-sm hover:bg-primary-container active:scale-95 transition-all" href="contact.html">
+<span>Enquire Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- 4. Bedroom Interiors -->
+<article class="service-card group rounded-xl bg-surface-container-low overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md" data-category="turnkey">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Quiet tranquil master bedroom sanctuary featuring a custom upholstered velvet headboard wall in warm taupe, integrated oak floating bedside tables with warm brass reading sconces, sheer ivory drapes, and textured neutral rug." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGNGT2GhL98TlCmWEV33M0yQPjnv6x9s6DZnwbDe61E7gEahngE83gn7TukK65eNbx6YTK_no5pBhR--Ytn5RipyUSlTJWXsdLE7xz9sol6R3kwZxHtkIUbnOSJPHoA10GTlCJLYApGkjqIZsTk6aP2qgqJlgPtN2a8I2-idwt3jqqkA2mQn7BCkQWbIZ6XPusSaYQysTsMvfzch7kV9ZAp1mIS-7NZXqibxxH_phH6e4AzTbJ5Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-primary-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span>04</span>
+<span class="opacity-60">•</span>
+<span>Private Sanctuaries</span>
+</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 text-surface">
+<h2 class="font-headline-sm text-headline-sm text-surface">Bedroom Interiors</h2>
+</div>
+</div>
+<div class="p-space-md space-y-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Create peaceful and comfortable bedrooms designed around restorative relaxation and clutter-free concealed storage.</p>
+<div class="space-y-space-xs rounded-lg bg-surface-container p-space-sm">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Sanctuary Elements</p>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Bespoke acoustic padded bed backdrops</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Floor-to-ceiling silent sliding or glass wardrobes</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Floating custom side tables with wire organizers</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Circadian warm bedtime reading fixtures</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Under-bed hydraulic storage &amp; vanity alcoves</span>
+</li>
+</ul>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Estimated Timeline</p>
+<p class="font-title-md text-title-md text-primary font-medium">3 – 5 Weeks</p>
+</div>
+<a class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase shadow-sm hover:bg-primary-container active:scale-95 transition-all" href="contact.html">
+<span>Enquire Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- 5. Wardrobes & Storage -->
+<article class="service-card group rounded-xl bg-surface-container-low overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md" data-category="millwork">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Floor-to-ceiling walk-in luxury closet with fluted tinted glass doors, warm internal LED strip lighting highlighting organized garment racks, watch display drawer with velvet inserts, and matte charcoal trim." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKUnUcazwRPh6mpYCeyGaeCNqseq9mvv_hu12oZu4VxVE-lFe3YDxZ1nDLRPkOViKUN3eYMdBrnS2bWZ36Mf90mGbAy8xt6INTVWdhsXJoRxXr8rNE4ODH4XJ7pUdOOyTe3zXpf0Rq5AQWCKntUHzHa3hmJJYX-CsfZhKHgCBj--bT7GEV6-32CxKSy10s4cq3j23ws1XbPd7yKKaEeYEDz3KWEVp4DXnr8c9n8fkHHdy85O1y_w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-primary-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span>05</span>
+<span class="opacity-60">•</span>
+<span>Bespoke Millwork</span>
+</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 text-surface">
+<h2 class="font-headline-sm text-headline-sm text-surface">Wardrobes &amp; Storage</h2>
+</div>
+</div>
+<div class="p-space-md space-y-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Maximize storage with practical wardrobe and storage concepts built to measure with tactile exterior and interior textures.</p>
+<div class="space-y-space-xs rounded-lg bg-surface-container p-space-sm">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Craftsmanship Scope</p>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Top-hung soft close sliding wardrobe systems</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Classic full-height hinged doors with custom pulls</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>High-capacity overhead loft storage integration</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Illuminated curio glass display units</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Custom jewelry organizers &amp; pull-out trouser racks</span>
+</li>
+</ul>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Estimated Timeline</p>
+<p class="font-title-md text-title-md text-primary font-medium">2 – 4 Weeks</p>
+</div>
+<a class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase shadow-sm hover:bg-primary-container active:scale-95 transition-all" href="contact.html">
+<span>Enquire Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- 6. False Ceiling & Lighting -->
+<article class="service-card group rounded-xl bg-surface-container-low overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md" data-category="lighting">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist architectural plaster ceiling with seamless recessed cove lighting casting soft ambient wash over neutral beige walls, trimmed with delicate magnetic track spotlight fixtures in a contemporary room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRzYCpQ92q4PfRdqMigcttHBJG2uDUwgdr951wodc9zUPZpd94Q-rpxs4GnNSgTL4rP1h8iCqeROUvfuFYxsCuh-mBcMA-1Fwol0W-IlxV9XUpbx41_60qlufWcdQjE01C2P_SR7dgY6xdEx4ao08gh7jjnS2F52n6kokz0qhWtq4Ont8fj7asqho01HfkTvgoSGPg51v_PXTEGYDeNNvtotbn0ZvZF3MrFG2RQ26VeDNGulyXMA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-primary-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span>06</span>
+<span class="opacity-60">•</span>
+<span>Spatial Atmosphere</span>
+</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 text-surface">
+<h2 class="font-headline-sm text-headline-sm text-surface">False Ceiling &amp; Lighting</h2>
+</div>
+</div>
+<div class="p-space-md space-y-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Enhance your interior with carefully planned ceiling and lighting concepts that emphasize architectural height and warmth.</p>
+<div class="space-y-space-xs rounded-lg bg-surface-container p-space-sm">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Lighting Engineering</p>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Minimalist gypsum false ceiling profiles</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Glare-free indirect cove &amp; perimeter illumination</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Comfortable dimmable 3000K warm ambient lighting</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Magnetic track magnetic accent spots for art</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Sculptural statement decorative pendant curation</span>
+</li>
+</ul>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Estimated Timeline</p>
+<p class="font-title-md text-title-md text-primary font-medium">1 – 2 Weeks</p>
+</div>
+<a class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase shadow-sm hover:bg-primary-container active:scale-95 transition-all" href="contact.html">
+<span>Enquire Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- 7. TV Units & Feature Walls -->
+<article class="service-card group rounded-xl bg-surface-container-low overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md" data-category="lighting">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Contemporary media feature wall featuring bookmatched Italian travertine stone slab, fluted oak slatted wood paneling, floating charcoal cabinet console, and soft bronze backlight glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkCxcHtHxszH5aiss33zNAu6JrJck9fuXz5lOwWES5JtSfDWiDvVPrJ58YfeOHw0LoEWY1KjL-skOVC-HwtfHBgROGbCqjVehT4TQ1LiF5bCyERkc2UWxSws710g7R-Rb-pxwC56x_9v_fJ4vz6tLMMotVPR2vku43m-gznYsCCp1TqUJFxy1JugaldjPt4dFvVy4XiSH0WOtH8dwIeIE-BtTBmLvxJKXVIhe8dEEIpwwPOuZtiw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-primary-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span>07</span>
+<span class="opacity-60">•</span>
+<span>Focal Architectures</span>
+</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 text-surface">
+<h2 class="font-headline-sm text-headline-sm text-surface">TV Units &amp; Feature Walls</h2>
+</div>
+</div>
+<div class="p-space-md space-y-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Create visually appealing focal points with contemporary TV units and feature walls tailored to your entertainment systems.</p>
+<div class="space-y-space-xs rounded-lg bg-surface-container p-space-sm">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Focal Details</p>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Custom marble, fluted wood &amp; charcoal paneling</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Acoustic paneling to eliminate room echo</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Zero-wire conduit management for clean lines</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Floating consoles with soft-closing mitred drawers</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Integrated soundbar &amp; sub-woofer recesses</span>
+</li>
+</ul>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Estimated Timeline</p>
+<p class="font-title-md text-title-md text-primary font-medium">2 – 3 Weeks</p>
+</div>
+<a class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase shadow-sm hover:bg-primary-container active:scale-95 transition-all" href="contact.html">
+<span>Enquire Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- 8. Space Optimization -->
+<article class="service-card group rounded-xl bg-surface-container-low overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md" data-category="turnkey">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cleverly optimized apartment interior with a built-in window daybed bay seating featuring hidden drawers, foldaway work desk in light ash wood, and architectural shelving nook." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsjjHSP2PlrBtLIHsX2VeeILStpQGw_Qagfqz71OUnbnPuX8JMSl_W-7ADEkFyuknw8B8Nkwnc4P1DCAUqquCQQnzoTIxZ-gwV1abskJqjRAHyCROrpZTFrFuTrbZP4X0yzj7XokLku14GaI4AmZ6lSChHS7kShsMbVEst-gU7-hseGwkZNK9Lf8BTxjQzVFIiYDEbUB0xI7XmMHSIGAIGkh-fOIBy2bvkuM-jddX1PQNzHv-jaA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-primary-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span>08</span>
+<span class="opacity-60">•</span>
+<span>Intelligent Planning</span>
+</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 text-surface">
+<h2 class="font-headline-sm text-headline-sm text-surface">Space Optimization</h2>
+</div>
+</div>
+<div class="p-space-md space-y-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Make better use of every part of your home through thoughtful layouts, clever multi-purpose furniture and smart hidden storage.</p>
+<div class="space-y-space-xs rounded-lg bg-surface-container p-space-sm">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Strategic Solutions</p>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Awkward dead-zone and window nook transformations</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Dual-purpose cabinetry (bench storage, fold-out desks)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Ergonomic circulation and uninterrupted sightlines</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Under-stair compact bar or reading library units</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Translucent partition screens for flexible zoning</span>
+</li>
+</ul>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Estimated Timeline</p>
+<p class="font-title-md text-title-md text-primary font-medium">2 – 3 Weeks</p>
+</div>
+<a class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase shadow-sm hover:bg-primary-container active:scale-95 transition-all" href="contact.html">
+<span>Enquire Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</section>
+<!-- Interactive Materiality Swatch Teaser (Micro-Delight) -->
+<section class="px-margin pb-space-2xl">
+<div class="rounded-xl bg-surface-container p-space-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">The Material Palette</span>
+<h3 class="font-title-lg text-title-lg text-primary">Sensory Tactility</h3>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">palette</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We source honest, timeless finishes suited for coastal Andhra Pradesh climate—from solid teak to heat-resistant quartz.</p>
+<div class="grid grid-cols-4 gap-2 pt-1">
+<div class="group relative flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface hover:bg-surface-container-lowest transition-colors cursor-pointer text-center">
+<div class="w-10 h-10 rounded-full bg-[#D4A373] shadow-inner flex items-center justify-center text-surface/80">
+<span class="material-symbols-outlined text-[18px]">forest</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface">Teak Veneer</span>
+</div>
+<div class="group relative flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface hover:bg-surface-container-lowest transition-colors cursor-pointer text-center">
+<div class="w-10 h-10 rounded-full bg-[#E5DFD7] shadow-inner flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">crop_square</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface">Travertine</span>
+</div>
+<div class="group relative flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface hover:bg-surface-container-lowest transition-colors cursor-pointer text-center">
+<div class="w-10 h-10 rounded-full bg-[#C59B27] shadow-inner flex items-center justify-center text-surface">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface">Aged Brass</span>
+</div>
+<div class="group relative flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface hover:bg-surface-container-lowest transition-colors cursor-pointer text-center">
+<div class="w-10 h-10 rounded-full bg-[#DDD6CE] shadow-inner flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">texture</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface">Oat Linen</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA: Local Rajahmundry Consultation Invitation -->
+<section class="px-margin pb-space-2xl">
+<div class="relative rounded-2xl bg-primary-container text-on-primary p-space-lg overflow-hidden shadow-lg">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-secondary/15 blur-2xl pointer-events-none"></div>
+<div class="relative space-y-space-md">
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/20 text-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Danavaipeta • Rajahmundry</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-surface tracking-tight">Ready to curate your sanctuary?</h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">Schedule a private 45-minute studio design consultation or site discovery visit at our Danavaipeta studio. Let us turn your floorplan into poetry.</p>
+</div>
+<div class="space-y-space-sm pt-2">
+<a class="flex items-center justify-center gap-2 w-full py-3.5 px-space-md rounded-lg bg-secondary text-on-secondary font-label-md text-label-md tracking-wider uppercase shadow-md active:scale-98 hover:brightness-110 transition-all" href="contact.html">
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+<span>Book Studio Consultation</span>
+</a>
+<a class="flex items-center justify-center gap-2 w-full py-3 px-space-md rounded-lg bg-surface/10 text-surface font-label-md text-label-md tracking-wider uppercase hover:bg-surface/20 transition-all" href="tel:+918832400000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Speak with an Architect</span>
+</a>
+</div>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm text-on-primary-container">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">verified</span>
+<span>Rajahmundry &amp; Godavari Region</span>
+</span>
+<span>Zero Obligation Review</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Filter chips functionality for responsive micro-delight
+  const filterChips = document.querySelectorAll('.filter-chip');
+  const serviceCards = document.querySelectorAll('.service-card');
+
+  filterChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      // Toggle active states
+      filterChips.forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary');
+        c.classList.add('bg-surface-container-high', 'text-on-surface');
+      });
+      chip.classList.remove('bg-surface-container-high', 'text-on-surface');
+      chip.classList.add('bg-primary', 'text-on-primary');
+
+      const filterValue = chip.getAttribute('data-filter');
+
+      // Filter cards smoothly
+      serviceCards.forEach(card => {
+        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+          card.style.display = 'block';
+          card.classList.add('animate-fade');
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script><footer class="w-full bg-primary-container text-on-primary pt-space-2xl pb-32"><div class="px-margin grid grid-cols-1 sm:grid-cols-2 gap-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-1.5"><span class="font-['Playfair_Display'] text-[24px] font-normal tracking-tight text-surface lowercase">artiv</span><span class="font-['Poppins'] text-[11px] font-medium tracking-[0.22em] text-secondary-fixed uppercase">interiors</span></div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Contemporary residential interior architecture studio based in Rajahmundry, curating serene sanctuaries with organic warmth and bespoke craftsmanship.</p></div><div class="space-y-space-sm"><h3 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Quick Links</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-high"><li class="h-8 flex items-center"><a class="hover:text-surface transition-colors" data-path="home-showcase" href="index.html">Home Overview</a></li><li class="h-8 flex items-center"><a class="hover:text-surface transition-colors" data-path="about-studio" href="about.html">Our Philosophy</a></li><li class="h-8 flex items-center"><a class="hover:text-surface transition-colors" data-path="design-services" href="service.html">Bespoke Services</a></li><li class="h-8 flex items-center"><a class="hover:text-surface transition-colors" data-path="residential-portfolio" href="project.html">Selected Works</a></li><li class="h-8 flex items-center"><a class="hover:text-surface transition-colors" data-path="consultation-booking" href="contact.html">Book a Consultation</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Services</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-high"><li class="h-8 flex items-center"><span>Turnkey Architectural Interiors</span></li><li class="h-8 flex items-center"><span>Bespoke Millwork &amp; Finishes</span></li><li class="h-8 flex items-center"><span>Spatial Planning &amp; Curation</span></li><li class="h-8 flex items-center"><span>Lighting &amp; Tactile Materiality</span></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Rajahmundry Studio</h3><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Danavaipeta, Rajahmundry<br/>Andhra Pradesh 533103, India<br/>studio@artivinteriors.com</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Instagram" class="w-9 h-9 rounded-lg bg-surface/10 flex items-center justify-center text-surface hover:bg-surface/20 transition-colors" href="https://instagram.com"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Facebook" class="w-9 h-9 rounded-lg bg-surface/10 flex items-center justify-center text-surface hover:bg-surface/20 transition-colors" href="https://facebook.com"><span class="material-symbols-outlined text-[18px]">public</span></a><a aria-label="Pinterest" class="w-9 h-9 rounded-lg bg-surface/10 flex items-center justify-center text-surface hover:bg-surface/20 transition-colors" href="https://pinterest.com"><span class="material-symbols-outlined text-[18px]">push_pin</span></a><a aria-label="YouTube" class="w-9 h-9 rounded-lg bg-surface/10 flex items-center justify-center text-surface hover:bg-surface/20 transition-colors" href="https://youtube.com"><span class="material-symbols-outlined text-[18px]">play_circle</span></a><a aria-label="WhatsApp" class="w-9 h-9 rounded-lg bg-surface/10 flex items-center justify-center text-surface hover:bg-surface/20 transition-colors" href="https://whatsapp.com"><span class="material-symbols-outlined text-[18px]">chat</span></a></div></div></div><div class="mt-space-xl pt-space-md mx-margin flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-primary-container"><p>© 2026 artiv interiors. All rights reserved.</p><a class="inline-flex items-center gap-1.5 text-secondary-fixed hover:text-surface transition-colors py-2" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"><span>Back to top</span><span class="material-symbols-outlined text-[16px]">north</span></a></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_10px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-medium"><div class="h-16 px-space-sm flex items-center justify-around"><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="home-showcase" href="index.html"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Home</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-studio" href="about.html"><span class="material-symbols-outlined text-[22px]">architecture</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">About</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="residential-portfolio" href="project.html"><span class="material-symbols-outlined text-[22px]">gallery_thumbnail</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Projects</span></a><a aria-current="page" class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center transition-colors text-primary font-medium" data-path="design-services" href="service.html"><span class="material-symbols-outlined text-[22px]">design_services</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Services</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="studio-contact" href="contact.html"><span class="material-symbols-outlined text-[22px]">mail</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Contact</span></a></div></nav></body></html>

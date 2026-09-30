@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Poppins:wght@300;400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#44474a", "surface-container-lowest": "#ffffff", "on-primary-container": "#888c91", "surface-dim": "#dbdad6", "secondary-container": "#fed39c", "tertiary-fixed-dim": "#c9c6c1", "on-primary-fixed": "#181c20", "error": "#ba1a1a", "primary-fixed": "#e0e3e8", "tertiary-container": "#262522", "on-tertiary-container": "#8e8c87", "on-primary": "#ffffff", "surface-bright": "#fbf9f5", "inverse-on-surface": "#f2f0ed", "on-primary-fixed-variant": "#43474c", "outline": "#75777b", "surface-container": "#efeeea", "tertiary-fixed": "#e6e2dd", "on-error": "#ffffff", "outline-variant": "#c5c6ca", "on-background": "#1b1c1a", "on-tertiary-fixed-variant": "#484743", "primary-fixed-dim": "#c3c7cc", "secondary-fixed": "#ffddb4", "on-secondary": "#ffffff", "on-secondary-container": "#79592d", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-tertiary-fixed": "#1c1c19", "on-secondary-fixed": "#291800", "secondary-fixed-dim": "#e9c08a", "primary-container": "#212529", "surface-container-highest": "#e4e2de", "surface-container-high": "#eae8e4", "inverse-surface": "#30312e", "secondary": "#78592d", "on-surface": "#1b1c1a", "surface-tint": "#5b5f63", "inverse-primary": "#c3c7cc", "on-secondary-fixed-variant": "#5e4117", "surface-container-low": "#f5f3ef", "on-tertiary": "#ffffff", "surface": "#fbf9f5", "surface-variant": "#e4e2de", "background": "#fbf9f5", "primary": "#0c1014", "tertiary": "#10100d" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xs": "0.25rem", "margin": "1.25rem", "space-md": "1rem", "gutter": "1.5rem", "margin-desktop": "5rem", "gutter-desktop": "2.5rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-2xl": "4rem", "space-3xl": "6rem", "margin-tablet": "2.5rem" }, fontFamily: { "title-md": ["Outfit"], "headline-md": ["Playfair Display"], "headline-sm": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "display-mobile": ["Playfair Display"], "label-lg": ["Outfit"], "body-sm": ["Outfit"], "title-lg": ["Outfit"], "body-lg": ["Outfit"], "label-md": ["Outfit"], "headline-lg": ["Playfair Display"], "display": ["Playfair Display"], "label-sm": ["Outfit"], "body-md": ["Outfit"] }, fontSize: { "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "500" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }], "display-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } html { scroll-behavior: smooth; } } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }</style></head><body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col font-body-md text-body-md"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><button aria-label="Open Studio Menu" class="w-11 h-11 -ml-space-xs flex items-center justify-center text-on-surface active:scale-95 transition-transform" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex items-center gap-1.5"><span class="font-['Playfair_Display'] text-[21px] font-normal tracking-tight text-primary lowercase">artiv</span><span class="font-['Poppins'] text-[11px] font-medium tracking-[0.22em] text-secondary uppercase">interiors</span></div><div class="flex items-center gap-2"><a class="hidden sm:inline-flex items-center px-space-md h-9 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm tracking-wider uppercase hover:bg-primary-container transition-colors" data-path="consultation-booking" href="contact.html">Book</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16"><div class="flex flex-col w-full">
+<!-- Editorial Hero Section -->
+<section class="px-margin pt-space-lg pb-space-md">
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm tracking-widest uppercase">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+        Portfolio Archives
+      </div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">
+        Our Projects
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+        A collection of interior ideas for contemporary homes.
+      </p>
+</div>
+<!-- Architectural Key Metrics Bento Strip -->
+<div class="grid grid-cols-3 gap-2 mt-space-md p-space-sm rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest text-center">
+<span class="font-headline-sm text-headline-sm text-secondary">42+</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-0.5">Sanctuaries</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest text-center">
+<span class="font-headline-sm text-headline-sm text-secondary">100%</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-0.5">Bespoke Millwork</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest text-center">
+<span class="font-headline-sm text-headline-sm text-secondary">9+</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-0.5">Years Craft</span>
+</div>
+</div>
+</section>
+<!-- Filter Carousel Component -->
+<section class="sticky top-16 z-40 bg-surface/90 backdrop-blur-md py-space-sm px-margin shadow-[0_4px_16px_rgba(0,0,0,0.02)]">
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth" id="filterContainer">
+<button class="filter-btn active-filter px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-300 whitespace-nowrap bg-primary text-on-primary shadow-sm flex items-center gap-1.5" data-filter="all" type="button">
+<span>All Works</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+</button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-300 whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high flex items-center gap-1.5" data-filter="living" type="button">
+<span>Living Room</span>
+</button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-300 whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high flex items-center gap-1.5" data-filter="kitchen" type="button">
+<span>Kitchen</span>
+</button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-300 whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high flex items-center gap-1.5" data-filter="bedroom" type="button">
+<span>Bedroom</span>
+</button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-300 whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high flex items-center gap-1.5" data-filter="full-home" type="button">
+<span>Full Home</span>
+</button>
+</div>
+</section>
+<!-- Interactive Project Gallery Grid -->
+<section class="px-margin py-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary" id="activeFilterHeading">
+        Displaying All Residences (8)
+      </p>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">touch_app</span> Tap to inspect
+      </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md" id="projectGrid">
+<!-- PROJECT 1: Contemporary Living -->
+<article class="project-card group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer" data-badge="Living Room" data-category="living" data-desc="Warm natural oak wood accents paired with textured neutral linen seating, natural light diffusion, and handcrafted brass accents designed for calm familial gathering." data-location="Danavaipeta, Rajahmundry" data-title="Contemporary Living">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<!-- Replace this placeholder with actual artiv interiors project photography -->
+<img alt="Contemporary Living Interior" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="High-end contemporary residential living room with warm light oak wall cladding, bespoke off-white linen sectional sofa, ribbed travertine coffee table, warm sun rays casting soft shadows on lime-washed walls, minimal serene Indian luxury interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaIT85PWOFktYDZYynEPiwVZZreTDs3LJg5oBerMASrmev2z_fggWnR_SHPb4ZTxlyJUaKjwYE5WTW8l37FiXa0mEM67zqpA9mYVrVdc8SPb3Q9XC5Y0K1O5UpzA5ehvXAiLQugXCzfnmQvVtivfW2v7vFAs4W32v5407ck3OfwAE5bBnzacrd8-a3guYNE-0GjIL83q8XyMm4KrgmCOAV4mfzzv0SEqz5bSVvO8PHL3hqwHdepQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-space-sm">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">open_in_full</span>
+              View Details
+            </span>
+</div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-bright/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm tracking-wider uppercase shadow-sm">
+              Living Room
+            </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow space-y-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Project 01</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5 group-hover:text-secondary transition-colors">
+              Contemporary Living
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Warm oak accents, neutral linen seating, and ambient light filtration.
+          </p>
+<div class="pt-2 flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-medium">Explore Residence</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- PROJECT 2: Modern Kitchen -->
+<article class="project-card group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer" data-badge="Kitchen" data-category="kitchen" data-desc="Handleless matte graphite and sand cabinetry paired with seamless quartz countertops, integrated concealed lighting, and high-efficiency spatial workflow." data-location="Morampudi, Rajahmundry" data-title="Modern Kitchen">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<!-- Replace this placeholder with actual artiv interiors project photography -->
+<img alt="Modern Kitchen Design" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Minimalist luxury kitchen with matte cashmere and soft oak handleless cabinetry, seamless white quartz waterfall island, understated brushed brass designer faucet, architectural spotlighting and warm morning glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKk8W3W74oHgTXC6nzMV-_6AzNfdouMqjhH_eIYFdQInVhdwcE0lAUEPc3DzMR3rV3o95e0rFMEJggvckzthin-vyKUa8OlUu-vZ19Fz-3jLb9D6Mfdlf3cAS5BYUvafpQxaOP8bTNtcSp4m7c57oVs5G7sa-pJ1xINaHiacmJHbHG5W8yzDDykMq_eecKAVbJVYMyhDIZC4w9M0DvjBMXlC2w5gATATCEmIi1wWgDdi2X2zK7jw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-space-sm">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">open_in_full</span>
+              View Details
+            </span>
+</div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-bright/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm tracking-wider uppercase shadow-sm">
+              Kitchen
+            </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow space-y-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Project 02</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5 group-hover:text-secondary transition-colors">
+              Modern Kitchen
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Handleless matte cabinetry with pure quartz countertops and flush fittings.
+          </p>
+<div class="pt-2 flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-medium">Explore Residence</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- PROJECT 3: Minimal Bedroom -->
+<article class="project-card group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer" data-badge="Bedroom" data-category="bedroom" data-desc="Soft acoustic custom fabric headboard wall combined with warm ambient cove lighting, floating oak nightstands, and organic textured bedding." data-location="Innespeta, Rajahmundry" data-title="Minimal Bedroom">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<!-- Replace this placeholder with actual artiv interiors project photography -->
+<img alt="Minimal Bedroom Interior" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Serene minimal bedroom sanctuary with floor-to-ceiling upholstered beige acoustic wall headboard, warm indirect cove LED illumination, low profile platform bed dressed in linen, warm hardwood floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS6ooVdAaYKcM-VqFFQODiAz3B2FvTG-jULO5Jxh_z9oxs7_us-l9YXbOLiBWHoiKa8xmJ8zQS-N0muLfHouvahJX2iUKbKHGyeLCz8GHBaKvjjhiSera19DbXNoAl64H5cZLGxDeA9q1WNMtfLLwJpeMlLNcImLAfoGwnSTiQCcLTZ_FDxsWynQwer-LeLmIBBlyxu4uQdARLVrtHy--lHP8M9EHiAdcMDpABLM1kcXtEewUdeQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-space-sm">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">open_in_full</span>
+              View Details
+            </span>
+</div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-bright/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm tracking-wider uppercase shadow-sm">
+              Bedroom
+            </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow space-y-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Project 03</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5 group-hover:text-secondary transition-colors">
+              Minimal Bedroom
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Soft acoustic headboard and warm ambient coves creating a tranquil sanctuary.
+          </p>
+<div class="pt-2 flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-medium">Explore Residence</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- PROJECT 4: Complete Contemporary Home -->
+<article class="project-card group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer" data-badge="Full Home" data-category="full-home" data-desc="A comprehensive architectural villa transformation featuring a continuous floor plan, custom partition screens, and unified materiality across all living zones." data-location="Tilak Road, Rajahmundry" data-title="Complete Contemporary Home">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<!-- Replace this placeholder with actual artiv interiors project photography -->
+<img alt="Complete Contemporary Home" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Expansive open-plan luxury penthouse interior showing integrated living and dining zones, fluted architectural partition walls, warm timber ceiling rafters, marble flooring, and designer furniture in muted earthy palettes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCed88FIQAv1oLmRQLGv-6HyDBk720Mg2w-H0fgpmAG1E-pDfd9i0qIxjX9Hw2BAMvinXfYwgMxBQTErI9ZM7pLmTxeMBKeJkNkyUm877DwDBYLbMAHPhDk0HXh0Vtb3Ae-_4rDptYkQ4VlD3IA2GQzC5_i9Y-ZjCDlHmbqsMCUpOXT69sKZ4LP_jeWWe3rRwVrQuKofh_qFucqs2ceJrXtO-H4FDEAbGN8eEld7mZNa9xIrjJ6rA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-space-sm">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">open_in_full</span>
+              View Details
+            </span>
+</div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-bright/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm tracking-wider uppercase shadow-sm">
+              Full Home
+            </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow space-y-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Project 04</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5 group-hover:text-secondary transition-colors">
+              Complete Contemporary Home
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Harmonious open layout with integrated textures and cohesive architectural detailing.
+          </p>
+<div class="pt-2 flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-medium">Explore Residence</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- PROJECT 5: Elegant Living Space -->
+<article class="project-card group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer" data-badge="Living Room" data-category="living" data-desc="Cantilevered floating media credenza in smoked walnut with acoustic backing, paired with sculptural pendant lighting and curated display niches." data-location="Prakash Nagar, Rajahmundry" data-title="Elegant Living Space">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<!-- Replace this placeholder with actual artiv interiors project photography -->
+<img alt="Elegant Living Space" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Sophisticated residential living lounge with floating dark walnut media console against fluted limestone feature wall, subtle recessed warm amber lighting, sculptural ceramic vases, soft bouclé armchair." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbVuwdpvLUeQ1SceF_-us1zudbB12iO6pUizdOxGHYTgl__ZwaILIRNhncM6DAOobfnKK7yJTHOcha_8y6La20YbycLTxXkuNttKkJPGeUJopFfFY8u7Ik4EXLWTC_1ackh4ciWCEk1-SawtVGfn1iFyfa5bkxd59zJJYIgyupTUORGqAcOa-eNMutTMpPHd8Bm1tVx2fnC7wDFjhDp1tiDpDNqk0lmUEv6oJIGyhsNH84bGnX_w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-space-sm">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">open_in_full</span>
+              View Details
+            </span>
+</div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-bright/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm tracking-wider uppercase shadow-sm">
+              Living Room
+            </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow space-y-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Project 05</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5 group-hover:text-secondary transition-colors">
+              Elegant Living Space
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Floating entertainment unit and bespoke lighting framing architectural art pieces.
+          </p>
+<div class="pt-2 flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-medium">Explore Residence</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- PROJECT 6: Functional Modular Kitchen -->
+<article class="project-card group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer" data-badge="Kitchen" data-category="kitchen" data-desc="Engineered culinary layout utilizing the golden work triangle, hidden tandem pantry pull-outs, and durable anti-scratch porcelain surfaces." data-location="Kotipalli Road, Rajahmundry" data-title="Functional Modular Kitchen">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<!-- Replace this placeholder with actual artiv interiors project photography -->
+<img alt="Functional Modular Kitchen" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Ergonomic architectural modular kitchen with warm taupe matte cabinets, integrated concealed spice pantry, sleek induction cooktop with downdraft ventilation, textured porcelain slab backsplash, ambient task lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzZ7X0oa-E-0eQqAoJYFDy_TbotjuXHsOUQ4ClgfPVb6QamC9P8MB5Jho3mRIeRmhEj8agl8dt94bxyl3aFRHhnxEPm-ldDlH5xdMH0G6zQv9k0J7qA-m_zAISvNT-yszpSD5n3AfqRsq2PPFdb8CWm49-rONnzrAIJu8ca7zN3-mBSV4pXAAzw9UP1ZwnUo1ppYRw8BYL_XCeaE2cy-c0bnmhoWM6DpzRVGS3KKGDI3mOWnHmog"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-space-sm">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">open_in_full</span>
+              View Details
+            </span>
+</div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-bright/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm tracking-wider uppercase shadow-sm">
+              Kitchen
+            </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow space-y-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Project 06</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5 group-hover:text-secondary transition-colors">
+              Functional Modular Kitchen
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Ergonomic triangle planning and concealed pantry systems for seamless culinary flow.
+          </p>
+<div class="pt-2 flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-medium">Explore Residence</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- PROJECT 7: Modern Master Bedroom -->
+<article class="project-card group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer" data-badge="Bedroom" data-category="bedroom" data-desc="Floor-to-ceiling warm teak fluted paneling incorporating seamlessly concealed tinted glass walk-in wardrobe modules and a minimalist reading nook." data-location="Aryapuram, Rajahmundry" data-title="Modern Master Bedroom">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<!-- Replace this placeholder with actual artiv interiors project photography -->
+<img alt="Modern Master Bedroom" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Luxurious master bedroom with floor-to-ceiling natural fluted timber paneling, integrated warm LED vertical channels, tinted bronze glass walk-in wardrobe in background, cozy beige wool lounge chair beside window." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVkbzBDOU6gPeYprWC7nLrHeSfZd0efbPtbleJZl1PoSmozfm3OdPuY1JftTsbjcXG1-lJXf_pTiYoL4-BpSMBWubjT5hBuh8qN461OVi4__lUmsYTYo82NONRibEk67LfzwMgqgskllM0h5WmUsoeVEOsqlRywRrTcv6ibgLqJLjOB91EMDfOnlZDUzWR68WBRgk2THVgbe7-eb_ZMbely_Yg7Bfct4I7W4vU5LBLD9kIcDO8LA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-space-sm">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">open_in_full</span>
+              View Details
+            </span>
+</div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-bright/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm tracking-wider uppercase shadow-sm">
+              Bedroom
+            </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow space-y-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Project 07</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5 group-hover:text-secondary transition-colors">
+              Modern Master Bedroom
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Floor-to-ceiling fluted paneling and tailored walk-in wardrobe suite.
+          </p>
+<div class="pt-2 flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-medium">Explore Residence</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- PROJECT 8: Complete Residential Interior -->
+<article class="project-card group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer" data-badge="Full Home" data-category="full-home" data-desc="Complete 3,400 sq.ft turnkey villa styling embracing river-town coastal breezes, indigenous stone, custom joinery, and breathable spatial circulation." data-location="River Valley Enclave, Rajahmundry" data-title="Complete Residential Interior">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<!-- Replace this placeholder with actual artiv interiors project photography -->
+<img alt="Complete Residential Interior" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Expansive architectural residence interior overlooking tropical courtyard garden, double height ceiling with delicate wooden slat pergolas, textured microcement walls, low slung lounge sofas in warm ivory tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA__8JjoGmFB8ZljEqmnKwld4bnjUpQr_fPi-796IAtaqICMmAgczx0fTuw1vUGZDiSOA9ZCsKxrW9FWWFbpbVI6nEOizG14LUzWKwHKugvFdj9YLxJVXZmR7hKajscbDUG-l-GMG_Nx2jzpnMa2WMc_TSUEi74aIefDmENg1uBD7ggjyi2kvkiMDJq3raOzeirRsvawfQ-AjQnrY41hMDgvIt_Mm5n8bw7SDoyG7F5yYQgvv6J2w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-space-sm">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">open_in_full</span>
+              View Details
+            </span>
+</div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-bright/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm tracking-wider uppercase shadow-sm">
+              Full Home
+            </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow space-y-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Project 08</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5 group-hover:text-secondary transition-colors">
+              Complete Residential Interior
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Comprehensive urban home styling crafted for refined indoor-outdoor living.
+          </p>
+<div class="pt-2 flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-medium">Explore Residence</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Studio Craft Process Ribbon -->
+<section class="mx-margin my-space-lg p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="max-w-md mx-auto text-center space-y-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Artisanal Commitment</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Every Space Tells a Living Story</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Our Rajahmundry workshop coordinates master carpenters, masonry stoneworkers, and fabricators to ensure physical realization mirrors bespoke architectural blueprints.
+      </p>
+<div class="pt-space-xs flex justify-center">
+<a class="inline-flex items-center gap-2 px-space-lg py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase shadow-sm hover:bg-primary-container transition-all" data-path="consultation-booking" href="contact.html">
+<span>Commission a Project</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive Project Modal Overlay -->
+<div aria-modal="true" class="fixed inset-0 z-50 hidden items-center justify-center p-space-sm bg-primary/70 backdrop-blur-md transition-opacity duration-300 opacity-0" id="projectModal" role="dialog">
+<div class="relative w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-xl bg-surface-container-lowest shadow-2xl transition-all duration-300 scale-95 flex flex-col" id="modalBox">
+<!-- Close Button Pin -->
+<button aria-label="Close dialog" class="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-surface/90 text-on-surface flex items-center justify-center shadow-md hover:bg-surface-bright active:scale-95 transition-transform" id="modalCloseBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<!-- Large Preview Image Container -->
+<div class="relative w-full aspect-[16/10] bg-surface-container overflow-hidden">
+<!-- Replace this placeholder with actual artiv interiors project photography -->
+<img alt="Interior Detail Preview" class="w-full h-full object-cover" data-alt="High resolution architectural interior design rendering showcasing artisanal wood finishes, customized lighting, and contemporary furniture in a tranquil Indian villa." id="modalImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV5fjF8pazMwv5SSnAnekFjZR7uOYrsq933atSDcGHGSTsquE6AFbz5ROeqgpAR860xTXdXLfyhzEtKdgHswrUlGOjTSzdjUPoOQl5qAHTeg21rmSN63cOUomOsiF4YKYE3yIWSGW-_ZILn1e9ooATZq-4g-iCjtnSj9pu7FIfndblImVuMFZaYrDwTlMWbIor21NPuag28MxsOc24I1jEey8FIcEKT1FWCp31a-N8dWx4pXOxxQ"/>
+<div class="absolute bottom-3 left-3">
+<span class="px-3 py-1 rounded-md bg-secondary text-on-secondary font-label-sm text-label-sm tracking-wider uppercase shadow-sm" id="modalCategoryBadge">
+            Living Room
+          </span>
+</div>
+</div>
+<!-- Modal Content Body -->
+<div class="p-space-lg space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span id="modalLocation">Danavaipeta, Rajahmundry</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface" id="modalTitle">
+            Contemporary Living
+          </h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="modalDescription">
+          Warm natural oak wood accents paired with textured neutral linen seating, natural light diffusion, and handcrafted brass accents designed for calm familial gathering.
+        </p>
+<!-- Project Spatial Features -->
+<div class="grid grid-cols-2 gap-2 pt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="block font-label-sm text-[10px] uppercase text-secondary tracking-wider">Materials Used</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium mt-0.5 block">Natural Oak &amp; Linen</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="block font-label-sm text-[10px] uppercase text-secondary tracking-wider">Timeline</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium mt-0.5 block">12 Weeks Turnkey</span>
+</div>
+</div>
+<!-- Consultation Booking CTA -->
+<div class="pt-space-sm flex flex-col gap-2">
+<a class="w-full py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase text-center hover:bg-primary-container shadow-sm transition-all flex items-center justify-center gap-2" data-path="consultation-booking" href="contact.html">
+<span>Inquire About Similar Design</span>
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+</a>
+<button class="w-full py-2.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors text-center" id="modalDismissBtn" type="button">
+            Return to Gallery
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    // Interactive Filter Bar Logic
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    const filterHeading = document.getElementById('activeFilterHeading');
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Update button styles
+        filterButtons.forEach((b) => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+        // Filter cards
+        let visibleCount = 0;
+        projectCards.forEach((card) => {
+          const cat = card.getAttribute('data-category');
+          if (filter === 'all' || cat === filter) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        // Update count indicator
+        const labelMap = {
+          all: 'All Residences',
+          living: 'Living Room Concepts',
+          kitchen: 'Bespoke Kitchens',
+          bedroom: 'Bedroom Sanctuaries',
+          'full-home': 'Full Home Commissions'
+        };
+        if (filterHeading) {
+          filterHeading.textContent = `Displaying ${labelMap[filter] || 'Selected Spaces'} (${visibleCount})`;
+        }
+      });
+    });
+
+    // Modal Details Logic
+    const modal = document.getElementById('projectModal');
+    const modalBox = document.getElementById('modalBox');
+    const closeBtn = document.getElementById('modalCloseBtn');
+    const dismissBtn = document.getElementById('modalDismissBtn');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBadge = document.getElementById('modalCategoryBadge');
+    const modalDesc = document.getElementById('modalDescription');
+    const modalLoc = document.getElementById('modalLocation');
+    const modalImg = document.getElementById('modalImg');
+
+    function openModal(card) {
+      const title = card.getAttribute('data-title');
+      const badge = card.getAttribute('data-badge');
+      const desc = card.getAttribute('data-desc');
+      const loc = card.getAttribute('data-location');
+      const img = card.querySelector('img');
+
+      if (modalTitle) modalTitle.textContent = title;
+      if (modalBadge) modalBadge.textContent = badge;
+      if (modalDesc) modalDesc.textContent = desc;
+      if (modalLoc) modalLoc.textContent = loc;
+      if (modalImg && img) {
+        modalImg.setAttribute('src', img.getAttribute('src'));
+        modalImg.setAttribute('data-alt', img.getAttribute('data-alt') || '');
+      }
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        modal.classList.add('opacity-100');
+        modalBox.classList.remove('scale-95');
+        modalBox.classList.add('scale-100');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('opacity-100');
+      modal.classList.add('opacity-0');
+      modalBox.classList.remove('scale-100');
+      modalBox.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    projectCards.forEach((card) => {
+      card.addEventListener('click', () => openModal(card));
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (dismissBtn) dismissBtn.addEventListener('click', closeModal);
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+  })();
+</script><footer class="w-full bg-primary-container text-on-primary pt-space-2xl pb-32"><div class="px-margin grid grid-cols-1 sm:grid-cols-2 gap-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-1.5"><span class="font-['Playfair_Display'] text-[24px] font-normal tracking-tight text-surface lowercase">artiv</span><span class="font-['Poppins'] text-[11px] font-medium tracking-[0.22em] text-secondary-fixed uppercase">interiors</span></div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Contemporary residential interior architecture studio based in Rajahmundry, curating serene sanctuaries with organic warmth and bespoke craftsmanship.</p></div><div class="space-y-space-sm"><h3 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Quick Links</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-high"><li class="h-8 flex items-center"><a class="hover:text-surface transition-colors" data-path="home-showcase" href="index.html">Home Overview</a></li><li class="h-8 flex items-center"><a class="hover:text-surface transition-colors" data-path="about-studio" href="about.html">Our Philosophy</a></li><li class="h-8 flex items-center"><a class="hover:text-surface transition-colors" data-path="design-services" href="service.html">Bespoke Services</a></li><li class="h-8 flex items-center"><a class="hover:text-surface transition-colors" data-path="residential-portfolio" href="project.html">Selected Works</a></li><li class="h-8 flex items-center"><a class="hover:text-surface transition-colors" data-path="consultation-booking" href="contact.html">Book a Consultation</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Services</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-high"><li class="h-8 flex items-center"><span>Turnkey Architectural Interiors</span></li><li class="h-8 flex items-center"><span>Bespoke Millwork &amp; Finishes</span></li><li class="h-8 flex items-center"><span>Spatial Planning &amp; Curation</span></li><li class="h-8 flex items-center"><span>Lighting &amp; Tactile Materiality</span></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Rajahmundry Studio</h3><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Danavaipeta, Rajahmundry<br/>Andhra Pradesh 533103, India<br/>studio@artivinteriors.com</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Instagram" class="w-9 h-9 rounded-lg bg-surface/10 flex items-center justify-center text-surface hover:bg-surface/20 transition-colors" href="https://instagram.com"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Facebook" class="w-9 h-9 rounded-lg bg-surface/10 flex items-center justify-center text-surface hover:bg-surface/20 transition-colors" href="https://facebook.com"><span class="material-symbols-outlined text-[18px]">public</span></a><a aria-label="Pinterest" class="w-9 h-9 rounded-lg bg-surface/10 flex items-center justify-center text-surface hover:bg-surface/20 transition-colors" href="https://pinterest.com"><span class="material-symbols-outlined text-[18px]">push_pin</span></a><a aria-label="YouTube" class="w-9 h-9 rounded-lg bg-surface/10 flex items-center justify-center text-surface hover:bg-surface/20 transition-colors" href="https://youtube.com"><span class="material-symbols-outlined text-[18px]">play_circle</span></a><a aria-label="WhatsApp" class="w-9 h-9 rounded-lg bg-surface/10 flex items-center justify-center text-surface hover:bg-surface/20 transition-colors" href="https://whatsapp.com"><span class="material-symbols-outlined text-[18px]">chat</span></a></div></div></div><div class="mt-space-xl pt-space-md mx-margin flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-primary-container"><p>© 2026 artiv interiors. All rights reserved.</p><a class="inline-flex items-center gap-1.5 text-secondary-fixed hover:text-surface transition-colors py-2" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"><span>Back to top</span><span class="material-symbols-outlined text-[16px]">north</span></a></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_10px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-medium"><div class="h-16 px-space-sm flex items-center justify-around"><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="home-showcase" href="index.html"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Home</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-studio" href="about.html"><span class="material-symbols-outlined text-[22px]">architecture</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">About</span></a><a aria-current="page" class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center transition-colors text-primary font-medium" data-path="residential-portfolio" href="project.html"><span class="material-symbols-outlined text-[22px]">gallery_thumbnail</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Projects</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="design-services" href="service.html"><span class="material-symbols-outlined text-[22px]">design_services</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Services</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="studio-contact" href="contact.html"><span class="material-symbols-outlined text-[22px]">mail</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Contact</span></a></div></nav></body></html>
